@@ -1,0 +1,25 @@
+{
+  "name": "mrf-updater",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "description": "updates packages dependencies",
+  "repository": "https://github.com/Marfeel/MarfeelCI.git",
+  "homepage": "https://github.com/Marfeel/MarfeelCI",
+  "issues": "https://github.com/Marfeel/MarfeelCI/issues",
+  "scripts": {
+    "build": "npm run clean && npm run compile",
+    "postbuild": "cp -r .renovate/ dist",
+    "clean": "rm -rf ./dist",
+    "compile": "tsc -p tsconfig.json",
+    "start": "npm run build && probot run ./dist/index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.0",
+    "probot": "^9.5.3",
+    "renovate": "^19.133.11"
+  },
+  "devDependencies": {},
+  "engines": {
+    "node": ">=10.15.0"
+  }
+}
