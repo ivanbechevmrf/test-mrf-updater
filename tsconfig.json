@@ -1,9 +1,36 @@
 {
-	"extends": "../../tsconfig.json",
 	"compilerOptions": {
-		"outDir": "./dist"
+		"allowJs": false,
+		"declaration": true,
+		"esModuleInterop": true,
+		"lib": [
+			"es2015",
+			"es2017"
+		],
+		"module": "commonjs",
+		"moduleResolution": "node",
+		"pretty": true,
+		"strict": true,
+		"noImplicitAny": true,
+		"strictNullChecks": true,
+		"strictFunctionTypes": true,
+		"strictBindCallApply": true,
+		"strictPropertyInitialization": true,
+		"noImplicitThis": true,
+		"outDir": "./dist",
+		"alwaysStrict": true,
+		"noUnusedLocals": true,
+		"noImplicitReturns": true,
+		"noFallthroughCasesInSwitch": true,
+		"sourceMap": true,
+		"skipLibCheck": true,
+		"target": "es2018"
 	},
-	"exclude": ["./node_modules", "./types"],
+	"exclude": [
+		"node_modules",
+		"dist",
+		"./types"
+	],
 	"include": [
 		"src/**/*"
 	]
