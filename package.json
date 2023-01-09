@@ -19,7 +19,7 @@
     "module-alias": "^2.2.2",
     "node-fetch": "^2.6.0",
     "probot": "^9.5.3",
-    "renovate": "^19.133.11",
+    "renovate": "^34.95.2",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
   },
