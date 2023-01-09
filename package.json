@@ -18,7 +18,7 @@
     "@types/node-fetch": "^2.5.4",
     "module-alias": "^2.2.2",
     "node-fetch": "^2.6.0",
-    "probot": "^9.5.3",
+    "probot": "^12.2.8",
     "renovate": "^19.133.11",
     "ts-node": "^8.6.2",
     "typescript": "^3.7.5"
